@@ -12,3 +12,13 @@ Some observations:
 * The confetti animation view is being added in the appropriate place in the view hierarchy and appears in the view hierarchy debugger.
 * The confetti animation is being run on the main thread. I have checked that Thread.isMainThread returns True when it is being called.
 * When itemsForBeginning runs, the animation still works as expected. By the time dropSessionDidUpdate runs, the animation stops appearing.
+
+Instructions to reproduce:
+
+Animation Works:
+1. Tap on a journal cell (e.g. "Journal 1")
+2. Tap on a report cell (i.e. one of the blue boxes). You should see the confetti in the background.
+
+Animation Fails:
+1. Long tap on a journal cell and move to another position in the table view.
+2. Tap on a report cell (i.e. one of the blue boxes). No confetti anymore :(
