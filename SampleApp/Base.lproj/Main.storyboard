@@ -41,7 +41,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="journalName" destination="uGt-4u-AyW" id="6LO-WJ-Kku"/>
-                                            <segue destination="woa-Cr-NlU" kind="show" identifier="showJournal" id="UM6-Ko-8UO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -58,6 +57,7 @@
                     </view>
                     <connections>
                         <outlet property="journalsTableView" destination="2mt-ZE-Gdv" id="9BU-ML-Y1D"/>
+                        <segue destination="woa-Cr-NlU" kind="show" identifier="showJournal" id="wzB-yF-xPY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,27 +76,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReportCell" rowHeight="240" id="fj2-8h-Hst" customClass="ReportTableViewCell" customModule="SampleApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="240"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReportCell" id="fj2-8h-Hst" customClass="ReportTableViewCell" customModule="SampleApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fj2-8h-Hst" id="u1p-mi-JOj">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkR-eO-uEf">
-                                                    <rect key="frame" x="87" y="56" width="240" height="128"/>
+                                                    <rect key="frame" x="87" y="-18.5" width="240" height="80.5"/>
                                                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="128" id="MSo-Qy-XH8"/>
-                                                        <constraint firstAttribute="width" constant="240" id="scZ-Ye-qAc"/>
+                                                        <constraint firstAttribute="height" constant="80" id="Lz8-UD-gka"/>
+                                                        <constraint firstAttribute="width" constant="240" id="aV4-g1-md8"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lkR-eO-uEf" firstAttribute="leading" secondItem="u1p-mi-JOj" secondAttribute="leadingMargin" constant="67" id="1qy-f3-CWm"/>
-                                                <constraint firstItem="lkR-eO-uEf" firstAttribute="top" secondItem="u1p-mi-JOj" secondAttribute="topMargin" constant="45" id="6HC-yw-8ro"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="lkR-eO-uEf" secondAttribute="bottom" constant="45" id="NAJ-b3-Bj1"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="lkR-eO-uEf" secondAttribute="trailing" constant="67" id="rmF-OF-h2f"/>
+                                                <constraint firstItem="lkR-eO-uEf" firstAttribute="centerY" secondItem="u1p-mi-JOj" secondAttribute="centerY" id="2oh-of-ucT"/>
+                                                <constraint firstItem="lkR-eO-uEf" firstAttribute="centerX" secondItem="u1p-mi-JOj" secondAttribute="centerX" id="cS7-o5-yLw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

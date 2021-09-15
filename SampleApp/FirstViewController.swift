@@ -29,6 +29,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         journals.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        50
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JournalCell", for: indexPath) as! JournalTableViewCell
         cell.configure(name: journals[indexPath.row])

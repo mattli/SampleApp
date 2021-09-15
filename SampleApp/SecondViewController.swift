@@ -25,6 +25,10 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        250
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         reports.count
     }
